@@ -340,6 +340,17 @@
 			</div>
 		</script>
 		<!--/GiphyUI-->
+		<!--XKCD-->
+		<script id="xkcdUI" type="application/x-template">
+			<div>
+				<p><strong>{{ safe_title }}</strong></p>
+				<p><a href="http://xkcd.com/{{ num }}"><img class="xkcd-image" src="{{ img }}" title="{{ alt }}"/></a></p>
+				<p><strong>Title-text:</strong> {{ alt }}</p>
+				<a href="http://www.explainxkcd.com/wiki/index.php?title={{ num }}#Explanation">Comic Explanation</a>
+				<hr/>
+			</div>
+		</script>
+		<!--/XKCD-->
 
 
 		<div id="searchResultOptionHtml" type="application/x-template">
