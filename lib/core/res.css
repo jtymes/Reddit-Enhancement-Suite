@@ -105,7 +105,7 @@ body.res-console-open {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	background-image: url('https://s3.amazonaws.com/e.thumbs.redditmedia.com/r22WT2K4sio9Bvev.png');
+	background-image: url('https://s3.amazonaws.com/b.thumbs.redditmedia.com/tBwwK20XXxtpgudWx1L7bDXla-iotv-JA0jgA0Y-FVs.png');
 	background-repeat: no-repeat;
 	background-position: 0 -209px;
 }
@@ -309,7 +309,7 @@ body.res-console-open {
 	background-color: white !important;
 }
 #RESHelp {
-	background-image: url("https://s3.amazonaws.com/e.thumbs.redditmedia.com/r22WT2K4sio9Bvev.png");
+	background-image: url("https://s3.amazonaws.com/b.thumbs.redditmedia.com/tBwwK20XXxtpgudWx1L7bDXla-iotv-JA0jgA0Y-FVs.png");
 	background-position: -16px -120px;
 	margin-right: 8px;
 	width: 16px;
@@ -791,14 +791,17 @@ p.moduleListing {
 #SearchRES-results-container li:hover {
 	background-color: #FAFAFF;
 }
-.SearchRES-result-title {
+.SearchRES-result-header {
 	margin-bottom: 12px;
-	font-weight: bold;
 	color: #666;
+}
+.SearchRES-result-title {
+	font-weight: bold;
 }
 .advanced .SearchRES-result-title {
 	font-style: italic;
 }
+.SearchRES-result-title, .SearchRES-breadcrumb { display: block; }
 .SearchRES-breadcrumb {
 	font-weight: normal;
 	color: #888;
@@ -1142,7 +1145,7 @@ img {
 	display: inline-block;
 	float: none;
 }
-.usertext-body .md .expando-button, .wiki-page .expando-button {
+.usertext-body .md .expando-button, .wiki-page .expando-button, .messages-page .expando-button {
 	float: none;
 	display: inline-block;
 	vertical-align: bottom;
@@ -1156,14 +1159,14 @@ img {
 	max-width: 23px;
 	max-height: 23px;
 	display: inline-block;
-	background-image: url('//i.imgur.com/4kRhBP1.png'); /*Need to re-upload this to reddit and change the URL*/
+	background-image: url('https://s3.amazonaws.com/b.thumbs.redditmedia.com/tBwwK20XXxtpgudWx1L7bDXla-iotv-JA0jgA0Y-FVs.png');
 	margin-right: 6px;
 	cursor: pointer;
 	padding: 0;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 }
-.expando-button.image.commentImg {
+.expando-button.image.commentImg, .expando-button.video-muted.commentImg {
 	float: none;
 	margin-left: 4px;
 }
@@ -1191,7 +1194,7 @@ img {
 .RESdupeimg { color: #000; font-size: 10px;  }
 .RESClear { clear: both; margin-bottom: 10px;  }
 
-.RESGalleryControls a { cursor: pointer; display: inline-block; background-image: url("https://s3.amazonaws.com/e.thumbs.redditmedia.com/r22WT2K4sio9Bvev.png"); width: 16px; height: 16px; margin: 5px; }
+.RESGalleryControls .next, .RESGalleryControls .previous { cursor: pointer; display: inline-block; background-image: url("https://s3.amazonaws.com/b.thumbs.redditmedia.com/tBwwK20XXxtpgudWx1L7bDXla-iotv-JA0jgA0Y-FVs.png"); width: 16px; height: 16px; margin: 5px; }
 .RESGalleryControls span { position: relative; top: -9px; }
 .RESGalleryControls .previous { background-position: 0 -352px; }
 .RESGalleryControls .next { background-position: 16px -352px; }
@@ -1539,6 +1542,17 @@ a spinner with a static ring and no overlay.*/
 	background-color: #5bc0de;
 	border: 1px solid #46b8da;
 }
+
+
+/* imgur gifv player */
+.imgurgifv-brand {
+	float: left;
+}
+.imgurgifv-download {
+	float: right;
+}
+
+
 
 /* Compiled SCSS from MediaCrush - https://github.com/MediaCrush/MediaCrush */
 .player {

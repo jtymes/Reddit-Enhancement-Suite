@@ -72,7 +72,7 @@
 							<ul id="RESKnownFeatureRequests"><li style="color: red;">Loading...</li></ul>
 						</li>
 					</ol>
-					<span id="submittingFeature" class="submittingToEnhancementButton">I still want to submit a feature request!<span>
+					<span id="submittingFeature" class="submittingToEnhancementButton">I still want to submit a feature request!</span>
 				</div>
 			</div>
 
@@ -288,6 +288,27 @@
 			</div>
 		</script>
 		<!--/gifyoutubeUI-->
+		<!--imgurgifvUI-->
+		<script id="imgurgifvUI" type="application/x-template">
+			<div class="res-player video imgurgifv">
+				<a class="madeVisible" href="{{ directurl }}" target="_blank">
+				<video autoplay loop muted preload title="Drag to Resize" class="imgurgifvVid">
+					{{#sources}}
+					<source src="{{ source }}" {{#type}}type="{{ type }}"{{/type}} class="{{ class }}">
+					{{/sources}}
+				</video>
+				</a>
+				<div style="height: 35px;" class="ctrlContainer">
+					<div class="imgurgifv-brand">
+						<img src="//i.imgur.com/favicon.ico">
+					</div>
+					<div class="imgurgifv-download">
+						<a href="{{ downloadurl }}">download</a>
+					</div>
+				</div>
+			</div>
+		</script>
+		<!--/imgurgifvUI-->
 		<!--GiphyUI: modified from MediaCrush Player-->
 		<script id="GiphyUI" type="application/x-template">
 			<div class="res-player video giphyres">
@@ -319,6 +340,38 @@
 			</div>
 		</script>
 		<!--/GiphyUI-->
+    <!--XKCD-->
+    <script id="xkcdUI" type="application/x-template">
+      <div>
+        <p><strong>{{ safe_title }}</strong></p>
+        <p><a href="http://xkcd.com/{{ num }}"><img class="xkcd-image" src="{{ img }}" title="{{ alt }}"/></a></p>
+        <p><strong>Title-text:</strong> {{ alt }}</p>
+        <a href="http://www.explainxkcd.com/wiki/index.php?title={{ num }}#Explanation">Comic Explanation</a>
+        <hr/>
+      </div>
+    </script>
+    <!--/XKCD-->
+		<div id="searchResultOptionHtml" type="application/x-template">
+			<div class="SearchRES-result-header">
+				<span class="SearchRES-result-title">{{title}}</span>
+				<span class="SearchRES-breadcrumb">RES settings console
+					&gt; {{category}}
+					&gt; {{moduleName}} ({{moduleID}})
+					{{#optionKey}} &gt; {{optionKey}}{{/optionKey}}
+				</span>
+			</div>
+			<div class="SearchRES-result-description">
+				{{description}}
+			</div>
+		</div>
 
+
+		<pre id="optionLinkSnudown" type="application/x-template">
+**[{{title}}]({{url}})**
+-- [](#gear)
+[RES settings console]({{settingsUrl}}) > {{category}} > [{{moduleName}}]({{moduleUrl}} "{{moduleID}}") {{#optionKey}} > [{{optionKey}}]({{optionUrl}}){{/optionKey}}
+
+{{description}}
+		</script>
 	</body>
 </html>
