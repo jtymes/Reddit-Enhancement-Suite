@@ -220,6 +220,7 @@ pageMod.PageMod({
 		self.data.url('modules/nightmode.css'),
 		self.data.url('modules/commentBoxes.css'),
 		self.data.url('core/res.css'),
+		self.data.url('core/res_image.css'),
 		self.data.url('vendor/players.css'),
 		self.data.url('vendor/guiders.css'),
 		self.data.url('vendor/tokenize.css'),
